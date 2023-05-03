@@ -16,13 +16,13 @@
         <TextView
             android:id="@+id/itemTitle"
             android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/holo_green_dark"
+            android:textColor="#CF7171"
             android:textSize="18sp"
             android:textStyle="bold"
-            tools:text="Title"/>
+            tools:text="Title" />
 
         <TextView
             android:id="@+id/itemWriter"

@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 class ReviewAdapter(private var reviewList: List<Review>) :
     RecyclerView.Adapter<ReviewAdapter.ViewHolder>() {
 
+    // 뷰홀더 생성
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val context = parent.context
         val inflater = LayoutInflater.from(context)
@@ -17,11 +18,12 @@ class ReviewAdapter(private var reviewList: List<Review>) :
         return ViewHolder(view)
     }
 
+    // 리사이클러뷰 아이템 데이터 설정
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = reviewList[position]
         holder.title.text = item.title
         holder.writer.text = item.writer
-        holder.length.text = java.lang.Long.toString(item.length)
+        holder.length.text = item.length.toString()
         holder.review.text = item.review
     }
 
@@ -29,6 +31,7 @@ class ReviewAdapter(private var reviewList: List<Review>) :
         return reviewList.size
     }
 
+    // 리뷰리스트 값 설정
     fun updateReviewList(reviewList: List<Review>?) {
         reviewList?.let {
             this.reviewList = mutableListOf()
@@ -37,6 +40,7 @@ class ReviewAdapter(private var reviewList: List<Review>) :
         }
     }
 
+    // 뷰홀더 연결
     inner class ViewHolder(itemView: View) :
         RecyclerView.ViewHolder(itemView) {
         var title: TextView = itemView.findViewById(R.id.itemTitle)

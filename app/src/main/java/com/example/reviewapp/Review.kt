@@ -4,7 +4,7 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-
+// DB
 @Entity
 class Review {
     @JvmField
@@ -16,14 +16,14 @@ class Review {
     var title: String? = null
 
     @JvmField
-    @ColumnInfo(name = "Singer")
+    @ColumnInfo(name = "writer")
     var writer: String? = null
 
     @JvmField
-    @ColumnInfo(name = "play_time")
+    @ColumnInfo(name = "length")
     var length: Long = 0
 
     @JvmField
-    @ColumnInfo(name = "lyrics")
+    @ColumnInfo(name = "review")
     var review: String? = null
 }

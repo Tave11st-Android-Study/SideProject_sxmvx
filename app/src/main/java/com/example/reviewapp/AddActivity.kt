@@ -19,6 +19,7 @@ class AddActivity : AppCompatActivity() {
     private lateinit var rAddButton: Button
     private lateinit var job: Job
 
+    // 코루틴으로 데이터베이스에서 데이터 가져오기
     private inner class InsertCoroutine : CoroutineScope by MainScope() {
         fun insertMusic() {
             launch {
@@ -45,6 +46,7 @@ class AddActivity : AppCompatActivity() {
         reviewDB = ReviewDB.getInstance(this)!!
         rContext = applicationContext
 
+        // 버튼 클릭 이벤트 구현
         rAddButton.setOnClickListener {
             val insertCoroutine = InsertCoroutine()
             insertCoroutine.insertMusic()

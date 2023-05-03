@@ -3,9 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/min/Desktop/2023-1/ReviewApp/app/src/main/res/layout/activity_add.xml" value="0.1" />
-        <entry key="..\:/Users/min/Desktop/2023-1/ReviewApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/min/Desktop/2023-1/ReviewApp/app/src/main/res/layout/activity_add.xml" value="0.2" />
+        <entry key="..\:/Users/min/Desktop/2023-1/ReviewApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/min/Desktop/2023-1/ReviewApp/app/src/main/res/layout/item_music.xml" value="0.1" />
+        <entry key="..\:/Users/min/Desktop/2023-1/ReviewApp/app/src/main/res/layout/item_review.xml" value="0.264" />
       </map>
     </option>
   </component>
